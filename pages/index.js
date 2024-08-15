@@ -1,4 +1,5 @@
-import MeetupList from "@/components/meetups/MeetupList";
+import MeetupList from "@/components/meetups/MeetupList"
+
 
 const DUMMY_MEETUPS = [
     {
@@ -14,12 +15,14 @@ const DUMMY_MEETUPS = [
         address: 'Some random address 2'
     }
 
-]
+];
 
 const HomePage = () => {
-  return (
+    
+    return (
      <MeetupList meetups={DUMMY_MEETUPS} />
   )
 }
+
 
 export default HomePage;
