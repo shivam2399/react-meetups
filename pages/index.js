@@ -1,3 +1,4 @@
+import Head from "next/head";
 import MeetupList from "@/components/meetups/MeetupList"
 import { MongoClient } from "mongodb";
 
@@ -5,7 +6,14 @@ import { MongoClient } from "mongodb";
 const HomePage = (props) => {
     
     return (
-     <MeetupList meetups={props.meetups} />
+        <>
+         <Head>
+            <title>React Meetups</title>
+            <meta name="description" content="Browse a list of highly active React meetups" />
+         </Head>
+         <MeetupList meetups={props.meetups} />
+        </>
+     
   )
 }
 
